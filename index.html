@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+<script src="script.js"></script>
+
+<!--Bootstrap-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--NAVEGADOR-->
+    <nav class="navbar navbar-expand-md navbar-fixed-top navbar-dark main-nav" id="main">
+        <div class="container">
+            <ul class="nav navbar-nav ">
+                <li class="nav-item ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/rsz_usuarios_branco.png"></a>
+                    </li>
+            </ul>
+            <!--LOGO CENTRAL-->
+            <li class="nav-item">
+                <a class="navbar-brand" href="#"></a><img src="img/logotipo.png"></a>
+            </li>
+
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link-notif" href="#"><img src="img/notificacao_branco.png"></a>
+                </li>
+            </ul>
+            <!--BARRA DE PESQUISA-->>
+            <div class="input-group col-md-4">
+                <input class="form-control py-2" type="search" placeholder="Pesquisar Artistas..." id="example-search-input">
+                <span class="input-group-append">
+              <button class="btn btn-outline-secondary" src="img/lupa.jpg" type="button">
+                  <i class="fa fa-search" style="color: white;"></i>
+              </button>
+            </span>
+            </div>
+
+            <ul class="nav navbar-navs">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="img/rsz_setting_verde.png"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--MENU DE NAVEGAÇÃO-->
+    <ul class="nav justify-content-center menu bg-light">
+        <li class="nav-item">
+            <a class="nav-link-menu" href="# ">INICIO</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link-menu" href="# ">CANAIS</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link-ativo" href="# ">EM TURNÊ <span class="sr-only ">(Página Atual)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link-menu" href="# ">AO VIVO</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link-menu" href="# ">SOBRE</a>
+        </li>
+    </ul>
+
+    <!--MENU DOS CARTAZES-->
+    <div class="container main-container">
+        <div class="row ml-5">
+            <div class="emturne">EM TURNÊ</div>
+            <div class="emturne2">!</div>
+            <div class="menugrid ml-4 mt-4">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <button class="tablinks" onclick="visualizaAba(event, 'cima', 'meio', 'baixo')">TODOS</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="tablinks" onclick="visualizaAba(event, 'cima', 'null', 'null')">ARTISTAS</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="tablinks" onclick="visualizaAba(event,'meio','baixo', 'null')">GÊNERO</button>
+                </ul>
+            </div>
+        </div>
+        <!--TARJA PROXIMOS EVENTOS-->
+        <div class="row ml-5">
+            <div class="proximos ">
+                PRÓXIMOS
+            </div>
+            <div class="eventos ">
+                <div class="barra">
+                    EVENTOS
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--CARTEZES SUPERIORES-->
+    <div class="container">
+        <div id="cima" class="tabcontent">
+            <div class="row ml-5">
+                <!--FOTO ENRIQUE E JULIANO-->
+                <div class="col6"><img src="img/henrique_juliano.jpg">
+                    <!--DESCRICAO FOTO HENRIQUE E JULIANO-->
+                    <div class="row ml-auto ">
+                        <div class="estrela"><button type="button" id="estrela1"><img src="img/rsz_estrela_branca.png" onclick="more1('num1')"></button><input type="number" name="numero" id="num1"></div>
+                    </div>
+                    <div class="row ml-auto ">
+                        <div class="col7"><i class="fa fa-plus fa-lg" style="color: green;" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="col8">
+                            <div class="row ml-auto ">
+                                <div class="col9">FEV</div>
+                            </div>
+                            <div class="row ml-auto ">
+                                <div class="col10">24</div>
+                            </div>
+                        </div>
+
+                        <div class="col11 ml-2"><img src="img/rsz_redes_sociais_verde.png"></i>
+                        </div>
+                        <div class="col8">
+                            <div class="row ml-auto ">
+                                <div class="col12">Henrique e Juliano</div>
+                            </div>
+                            <div class="row ml-auto ">
+                                <div class="horario">00:00Hs</div>
+                                <div class="col14">Interlagos</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--FOTO ORAPPA-->
+                <div class="col6 ml-4"><img src="img/orappabanner.jpg">
+                    <!--DESCRICAO FOTO ORAPPA-->
+                    <div class="row ml-auto ">
+                        <div class="estrela-rappa"><button type="button" id="estrela3" onclick="more1('num3')"><img src="img/rsz_estrela_branca.png"></button><input type="number" name="numero" id="num3"></div>
+                    </div>
+                    <div class="row ml-auto ">
+                        <div class="col15"><i class="fa fa-plus fa-lg" style="color: green;" aria-hidden="true"></i></div>
+
+                        <div>
+                            <div class="row ml-auto ">
+                                <div class="col9">JAN</div>
+                            </div>
+                            <div class="row ml-auto ">
+                                <div class="col10">9</div>
+                            </div>
+                        </div>
+
+                        <div class="col11 ml-2"><img src="img/rsz_redes_sociais_verde.png"></i>
+                        </div>
+
+                        <div>
+                            <div class="row ml-auto ">
+                                <div class="orappa1">O Rappa</div>
+                            </div>
+                            <div class="row ml-auto ">
+                                <div class="horario">00:00Hs</div>
+                                <div class="orappa2">Espaço Show</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--CARTEZES DO MEIO-->
+    <div id="meio" class="tabcontent">
+        <div class="container">
+            <div class="row ml-5">
+                <!--FOTO TESTE1-->
+                <div class="col6"><img src="img/teste1.jpg">
+                    <div class="row ml-auto">
+                        <div class="estrela"><button type="button" id="estrela1" onclick="more1('num4')"><img src="img/rsz_estrela_branca.png"></button><input type="number" name="numero" id="num4"></div>
+                    </div>
+                    <div class="row ml-auto">
+                        <div class="col7"><i class="fa fa-plus fa-lg" style="color: green;" aria-hidden="true"></i>
+
+                        </div>
+                        <div class="col8">
+                            <div class="row ml-auto ">
+                                <div class="col30">FEV</div>
+                            </div>
+                            <div class="row ml-auto ">
+                                <div class="col31">24</div>
+                            </div>
+                        </div>
+                        <div class="col11 ml-2"><img src="img/rsz_redes_sociais_verde.png"></i>
+                        </div>
+                        <div>
+                            <div class="row ml-auto ">
+                                <div class="matheuskauan1">Matheus e Kauan</div>
+                            </div>
+                            <div class="row ml-auto ">
+                                <div class="horario">00:00Hs</div>
+                                <div class="matheuskauan2">São Paulo</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--FOTO TESTE2-->
+                <div class="col6 ml-4"><img src="img/teste2.jpg">
+                    <div class="row ml-auto">
+                        <div class="estrela"><button type="button" id="estrela1" onclick="more1('num5')"><img src="img/rsz_estrela_branca.png"></button><input type="number" name="numero" id="num5"></div>
+                    </div>
+                    <div class="row ml-auto">
+                        <div class="col7"><i class="fa fa-plus fa-lg" style="color: green;" aria-hidden="true"></i>
+
+                        </div>
+                        <div class="col8">
+                            <div class="row ml-auto ">
+                                <div class="col30">JAN</div>
+                            </div>
+                            <div class="row ml-auto ">
+                                <div class="col31">10</div>
+                            </div>
+                        </div>
+                        <div class="col11 ml-2"><img src="img/rsz_redes_sociais_verde.png"></i>
+                        </div>
+                        <div>
+                            <div class="row ml-auto ">
+                                <div class="henriquejuliano1">Henrique e Juliano</div>
+                            </div>
+                            <div class="row ml-auto ">
+                                <div class="horario">00:00Hs</div>
+                                <div class="henriquejuliano2">Rio de Janeiro</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--FOTO TESTE3-->
+                <div class="col6 ml-4"><img src="img/teste3.jpg">
+                    <div class="row ml-auto">
+                        <div class="estrela"><button type="button" id="estrela1" onclick="more1('num6')"><img src="img/rsz_estrela_branca.png"></button><input type="number" name="numero" id="num6"></div>
+                    </div>
+                    <div class="row ml-auto">
+                        <div class="col7"><i class="fa fa-plus fa-lg" style="color: green;" aria-hidden="true"></i>
+
+                        </div>
+                        <div class="col8">
+                            <div class="row ml-auto ">
+                                <div class="col30">JAN</div>
+                            </div>
+                            <div class="row ml-auto ">
+                                <div class="col31">2</div>
+                            </div>
+                        </div>
+                        <div class="col11 ml-2"><img src="img/rsz_redes_sociais_verde.png"></i>
+                        </div>
+                        <div>
+                            <div class="row ml-auto ">
+                                <div class="gustavolima1">Gustavo Lima</div>
+                            </div>
+                            <div class="row ml-auto ">
+                                <div class="horario">00:00Hs</div>
+                                <div class="gustavolima2">Florianópolis</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--CARTEZES INFERIORES-->
+
+    <div id="baixo" class="tabcontent">
+        <div class="container">
+            <div class="row ml-5">
+                <!--FOTO JORGE E MATHEUS-->
+                <div class="col6"><img src="img/jorge_matheus.jpg">
+                    <!--DESCRICAO FOTO JORGE E MATHEUS-->
+                    <div class="row ml-auto ">
+                        <div class="estrela" onclick="more1('num7')"><button type="button" id="estrela1" onclick="estrela1()"><img src="img/rsz_estrela_branca.png"></button><input type="number" name="numero" id="num7"></div>
+                    </div>
+                    <div class="row ml-auto ">
+                        <div class="col7"><i class="fa fa-plus fa-lg" style="color: green;" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="col8">
+                            <div class="row ml-auto ">
+                                <div class="col9">JAN</div>
+                            </div>
+                            <div class="row ml-auto ">
+                                <div class="col10">3</div>
+                            </div>
+                        </div>
+
+                        <div class="col11 ml-2"><img src="img/rsz_redes_sociais_verde.png"></i>
+                        </div>
+                        <div class="col8">
+                            <div class="row ml-auto ">
+                                <div class="colHenrique1">Jorge e Matheus</div>
+                            </div>
+                            <div class="row ml-auto ">
+                                <div class="horario">00:00Hs</div>
+                                <div class="colHenrique2">Rio de Janeiro</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--FOTO GUSTAVO LIMA-->
+                <div class="col6 ml-4"><img src="img/gustavo_lima.jpg">
+                    <!--DESCRICAO FOTO GUTAVO LIMA-->
+                    <div class="row ml-auto ">
+                        <div class="estrela-rappa" onclick="more1('num8')"><button type="button" id="estrela3" onclick="estrela3()"><img src="img/rsz_estrela_branca.png"></button><input type="number" name="numero" id="num8"></div>
+                    </div>
+                    <div class="row ml-auto ">
+                        <div class="col15"><i class="fa fa-plus fa-lg" style="color: green;" aria-hidden="true"></i></div>
+
+                        <div>
+                            <div class="row ml-auto ">
+                                <div class="col9">JAN</div>
+                            </div>
+                            <div class="row ml-auto ">
+                                <div class="col10">17</div>
+                            </div>
+                        </div>
+
+                        <div class="col11 ml-2"><img src="img/rsz_redes_sociais_verde.png"></i>
+                        </div>
+
+                        <div>
+                            <div class="row ml-auto ">
+                                <div class="colGustavo1">Gustavo Lima</div>
+                            </div>
+                            <div class="row ml-auto ">
+                                <div class="horario">00:00Hs</div>
+                                <div class="colGustavo2">São Paulo</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Pagination-->
+    <div class="container paginas mr-5">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                </li>
+                <li class="page-item active">
+                    <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script src="script.js "></script>
+</body>
+
+</html>
+
+</html>

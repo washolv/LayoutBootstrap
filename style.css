@@ -1,0 +1,338 @@
+#main {
+    background-color: #1C1C1C;
+}
+
+.navbar-brand {
+    margin-left: 300px;
+    padding-left: 40px;
+    text-align: center;
+}
+
+.nav-link-ativo {
+    font-weight: bold;
+    margin-left: 30px;
+    color: #1C1C1C;
+    padding-top: 20px;
+    padding-right: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.nav-link-menu {
+    margin-left: 20px;
+    color: #1C1C1C;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.tablinks {
+    border: none;
+    margin-top: 20px;
+    background-color: white;
+    color: #1C1C1C;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gustavolima1 {
+    padding-top: 10px;
+    padding-right: 83px;
+    padding-left: 10px;
+    background-color: #1C1C1C;
+    color: white;
+}
+
+.gustavolima2 {
+    padding-top: 0px;
+    padding-right: 26px;
+    background-color: #1C1C1C;
+    color: green;
+    font-weight: bold;
+}
+
+.henriquejuliano1 {
+    padding-top: 10px;
+    padding-right: 43px;
+    padding-left: 10px;
+    background-color: #1C1C1C;
+    color: white;
+}
+
+.henriquejuliano2 {
+    padding-top: 0px;
+    padding-right: 12px;
+    background-color: #1C1C1C;
+    color: green;
+    font-weight: bold;
+}
+
+.matheuskauan1 {
+    padding-top: 10px;
+    padding-right: 52px;
+    padding-left: 10px;
+    background-color: #1C1C1C;
+    color: white;
+}
+
+.matheuskauan2 {
+    padding-top: 0px;
+    padding-right: 45px;
+    background-color: #1C1C1C;
+    color: green;
+    font-weight: bold;
+}
+
+.col30 {
+    background-color: rgb(67, 74, 87);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 12px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.col31 {
+    background-color: rgb(67, 74, 87);
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 19px;
+    padding-left: 20px;
+    padding-top: -12px;
+    font-weight: bold;
+}
+
+.tabcontent {
+    display: none;
+}
+
+.emturne {
+    padding-top: 20px;
+    font-size: 45px;
+    color: #1C1C1C;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav-item>button.active {
+    color: green !important;
+}
+
+.emturne2 {
+    padding-top: 20px;
+    font-size: 45px;
+    color: green;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.proximos {
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #1C1C1C;
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.eventos {
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 75%;
+    background-color: #1C1C1C;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.col2 {
+    margin-top: 30px;
+}
+
+
+/*Seção dos cartazes*/
+
+.col6 {
+    padding-top: 30px;
+}
+
+.col7 {
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-right: 10px;
+    background-color: #1C1C1C;
+}
+
+.col9 {
+    background-color: rgb(67, 74, 87);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 12px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.col10 {
+    background-color: rgb(67, 74, 87);
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 19px;
+    padding-left: 20px;
+    padding-top: -10px;
+    font-weight: bold;
+}
+
+.col11 {
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #1C1C1C;
+}
+
+.col12 {
+    padding-top: 10px;
+    padding-right: 217px;
+    padding-left: 10px;
+    background-color: #1C1C1C;
+    color: white;
+}
+
+.horario {
+    padding-top: 0px;
+    padding-right: 5px;
+    padding-left: 4px;
+    background-color: #1C1C1C;
+    color: white;
+}
+
+.col14 {
+    padding-right: 217px;
+    background-color: #1C1C1C;
+    color: green;
+    font-weight: bold;
+}
+
+.col15 {
+    background-color: #1C1C1C;
+    padding-left: 11px;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+.orappa1 {
+    padding-top: 10px;
+    padding-right: 286px;
+    padding-left: 14px;
+    background-color: #1C1C1C;
+    color: white;
+}
+
+.orappa2 {
+    padding-right: 199px;
+    background-color: #1C1C1C;
+    color: green;
+    font-weight: bold;
+}
+
+.colGustavo1 {
+    padding-top: 10px;
+    padding-right: 248px;
+    padding-left: 14px;
+    background-color: #1C1C1C;
+    color: white;
+}
+
+.colGustavo2 {
+    padding-top: 0px;
+    padding-right: 218px;
+    background-color: #1C1C1C;
+    color: green;
+    font-weight: bold;
+}
+
+.colHenrique1 {
+    padding-top: 10px;
+    padding-right: 236px;
+    padding-left: 10px;
+    background-color: #1C1C1C;
+    color: white;
+}
+
+.colHenrique2 {
+    padding-top: 0px;
+    padding-right: 191px;
+    background-color: #1C1C1C;
+    color: green;
+    font-weight: bold;
+}
+
+.estrela {
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    margin-top: -50px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 25px;
+    color: white;
+}
+
+.estrela-rappa {
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    margin-top: -50px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 25px;
+    color: white;
+}
+
+#estrela1,
+#estrela2,
+#estrela3,
+#estrela4 {
+    background-color: black;
+    border: none;
+}
+
+#num1,
+#num2,
+#num3,
+#num4,
+#num5,
+#num6,
+#num7,
+#num8 {
+    background-color: black;
+    border: none;
+    color: white;
+    width: 35px;
+    padding-left: 10px;
+}
+
+
+/*Pagination*/
+
+.paginas {
+    margin-top: 20px;
+}
+
+.pagination>li>a {
+    background-color: white;
+    color: green;
+}
+
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+    color: #5a5a5a;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination>.active>a {
+    color: white;
+    background-color: green !Important;
+    border: solid 1px green !Important;
+}
